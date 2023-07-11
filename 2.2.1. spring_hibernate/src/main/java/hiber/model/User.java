@@ -31,6 +31,7 @@ public class User {
 
    @OneToOne
    @JoinColumn(name = "car_id")
+   @MapsId
    private Car userCar;
 
    public User() {}
